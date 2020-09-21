@@ -1,0 +1,90 @@
+/*Réinitilliser*/
+
+body, ul{
+	margin: 0;
+	padding 0;
+}
+
+
+
+ header {
+ 	background-color: yellow;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	padding: 10px;
+ }
+ h3 {
+ 	font-size: 15px;
+ }
+
+ /*STYLE DU MENU*/
+ nav {
+ 	background-color: orange;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	color: black;
+ }
+ nav li {
+ 	list-style-type: none;
+ 	padding : 10px;
+ }
+  nav a:hover {
+ 	text-decoration-line: overline;
+ }
+
+/*BARRE DE RECHERCHE*/
+#boutonRecherche {
+	background-color: #0065fc;
+	opacity: 0.8;
+	color: white;
+}
+
+/*STYLE DES ARTICLES*/
+
+.mainContent {
+	display : flex-wrap;
+
+}
+
+
+.mainHebergements {
+	background-color : #f2f2f2;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 50%;
+	border-radius: 10px;
+	overflow: auto;
+	}
+.mainHebergements div {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 0 0 30px 0;
+	height: 150px;
+}
+.mainHebergements li {
+	list-style-type: none;
+}
+.hebergements {
+	background-color : #ffffff;
+	border-radius: 10px;
+	margin-right: 30px;
+	width: 200px;
+	height: 100%;
+}
+
+/*STYLE DES ARTICLES*/
+.popularHebergements {
+	background-color : #f2f2f2;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 20%;
+	border-radius: 10px;
+	}
+.popularHebergements li {
+	list-style-type: none;
+}
