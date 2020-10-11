@@ -5,13 +5,10 @@
   <meta charset="utf-8">
   <title>Projet 2 Alexandre Cuneo</title>
   <link rel="stylesheet" href="reservia/css/style.css">
-  <script src="script.js"></script>
-
+  
   <!-- fonts !--> 
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-  <!-- icons !--> 
-  <script src="https://kit.fontawesome.com/487b445571.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,8 +19,8 @@
   	</figure>
     
   	<ul class="menu">
-  		  <li class="menuOption1"><a href="#">Hébergements</a></li>
-        <li class="menuOption2"><a href="#">Activités</a></li>
+  		  <li class="menuOption1"><a href="#ancre1">Hébergements</a></li>
+        <li class="menuOption2"><a href="#ancre2">Activités</a></li>
         <li class="menuOption3"><a href="#">S'inscrire</li></a>
   	</ul>
 
@@ -45,22 +42,26 @@
 	   
       <!-- filtres !--> 
       <form class="filtres-bar">
-        <p>Filtres</p>
+        <h3>Filtres</h3>
+
         <button class="filtres">
-            <i class="fas fa-money-bill-wave"></i>
-            Economique
+            <div class="buttons-icons"><i class="fas fa-money-bill-wave"></i></div>
+            <h3>Economique</h3>
         </button>
+
         <button class="filtres">
-            <i class="fas fa-male"></i>
-            Famillial
+            <div class="buttons-icons"><i class="fas fa-male"></i></div>
+            <h3>Famillial</h3>
         </button>
-        <button class="fitres">
-            <i class="fas fa-heart"></i></i>
-            Romantique
+
+        <button class="filtres">
+            <div class="buttons-icons"><i class="fas fa-heart"></i></div>
+            <h3>Romantique</h3>
         </button>
-        <button class="fitres">
-            <i class="fas fa-dog"></i></i>
-            Animaux autorisés
+
+        <button class="filtres">
+            <div class="buttons-icons"><i class="fas fa-dog"></i></div>
+            <h3>Animaux autorisés</h3>
         </button>
       </form>
 
@@ -73,50 +74,110 @@
 
     <!-- Partie gauche !--> 
   	<section class="mainHebergements">
-	  	<h2>Hébergements à Marseille</h2>
+	  	<h2 id="ancre1">Hébergements à Marseille</h2>
       <ul>
-  	  	<li class="hebergements" >
-          	<h3>Auberge la Cannebière</h3>
-          	<p>Nuit à partir de 25€.</p>
+
+  	  	<li class="hebergements main1">
+            <figure>
+              <img src="reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+            </figure>
+            <figcaption>
+              <h3>Auberge la Cannebière</h3>
+            <p>Nuit à partir de 25€.</p>
+            </figcaption>
       	</li> 
-      	<li class="hebergements">
+
+      	<li class="hebergements main2">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+          </figure>
+
+          <figcaption>
           	<h3>Hôtel du port</h3>
           	<p>Nuit à partir de 52€.</p>
+          </figcaption>
       	</li>
-      	<li class="hebergements">
-          	<h3>Hôtel Les mouettes</h3>
-          	<p>Nuit à partir de 76€.</p>
+
+      	<li class="hebergements main3">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+          </figure>
+
+          <figcaption>
+          	 <h3>Hôtel Les mouettes</h3>
+          	 <p>Nuit à partir de 76€.</p>
+          </figcaption>
       	</li>
-      	<li class="hebergements">
-          	<h3>Hôtel de la mer</h3>
-          	<p>Nuit à partir de 46€.</p>
+
+      	<li class="hebergements main4">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+          </figure>
+
+          <figcaption>
+          	 <h3>Hôtel de la mer</h3>
+          	 <p>Nuit à partir de 46€.</p>
+          </figcaption>
       	</li>
-      	<li class="hebergements">
-          	<h3>Auberge Le Panier</h3>
-          	<p>Nuit à partir de 23€.</p>
+
+      	<li class="hebergements main5">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+          </figure>
+
+          <figcaption>
+          	 <h3>Auberge Le Panier</h3>
+          	 <p>Nuit à partir de 23€.</p>
+          </figcaption>
       	</li>
-      	<li class="hebergements">
-          	<h3>Hôtel chez Amina</h3>
-          	<p>Nuit à partir de 96€.</p>
+
+      	<li class="hebergements main6">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+          </figure>
+          <figcaption>
+          	 <h3>Hôtel chez Amina</h3>
+          	 <p>Nuit à partir de 96€.</p>
+          </figcaption>
       	</li>
       </ul> 
+
+      <h3><a href="">Afficher plus</a></h3>
     </section>
 
     <!-- Partie droite !--> 
   	<aside class="popularHebergements">
   		<h2>Les plus populaires</h2>
       <ul>
-    		<li class="hebergements">
+    		<li class="hebergements popular1">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+          </figure>
+          <figcaption>
           	<h3>Hôtel le soleil du matin</h3>
           	<p>Nuit à partir de 128€.</p>
+          </figcaption>
       	</li>
-      	<li class="hebergements">
+
+      	<li class="hebergements popular2">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+          </figure>
+          <figcaption>
           	<h3>Au coeur de l'eau Chambre d'hôtes</h3>
           	<p>Nuit à partir de 71€.</p>
+          </figcaption>
       	</li>
-      	<li class="hebergements">
+
+      	<li class="hebergements popular3">
+          <figure>
+              <img src="reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+          </figure>
+          <figcaption>
           	<h3>Hôtel tout bleu et Blanc</h3>
           	<p>Nuit à partir de 68€.</p>
+          </figcaption>
+          
       	</li>
       </ul>
   	</aside>
@@ -125,34 +186,39 @@
 
     <!-- Deuxieme Section !--> 
 
-  <h2>Activités à Marseille</h2>
+  <h2 id="ancre2">Activités à Marseille</h2>
 
   <section class="activites_bloc">
 
-      <article class="activites">
-          <h3>Vieux Port</h3>
-          <img src="reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-      </article>
-      <article class="activites">
-          <h3>Fort de Pomègues</h3>
-           <img src="reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-      </article>
-      <article class="activites">
-          <h3>Ile du Frioul</h3>
-           <img src="reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-      </article>
-      <article class="activites">
-          <h3>Parc National des Calanques</h3>
-           <img src="reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-      </article>
-      <article class="activites">
-          <h3>Notre-Dame-de-la-Garde</h3>
-           <img src="reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-      </article>
-      <article class="activites">
-          <h3>Parc Longchamp</h3>
-           <img src="reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-      </article>
+      <div class="fullCol">
+        <article class="activites act1">
+            <h3>Vieux Port</h3>
+        </article>
+      </div>
+
+      <div>
+        <article class="activites act2 halfCol">
+            <h3>Fort de Pomègues</h3>
+        </article>
+        <article class="activites act3 halfCol">
+            <h3>Ile du Frioul</h3>
+        </article>
+      </div>
+
+      <div class="fullCol">
+        <article class="activites act4">
+            <h3>Parc National des Calanques</h3>
+        </article>
+      </div>
+
+      <div>
+        <article class="activites act5 halfCol">
+            <h3>Notre-Dame-de-la-Garde</h3>
+        </article>
+        <article class="activites act6 halfCol">
+            <h3>Parc Longchamp</h3>
+        </article>
+      </div>
 
   </section>
 
@@ -170,6 +236,13 @@
       </p>
     </div>
 
+<!--     <ul>
+      <li><h3>A propos</h3></li>
+      <li>Fonctionnement du site<br>
+        Conditions générales de vente<br>
+        Données et confidentialité<br></li>
+    </ul> -->
+
     <div>
       <h3>Nos hebergements</h3>
       <p>
@@ -186,6 +259,9 @@
       </p>
     </div>
 
+
+      <!-- icons !--> 
+    <script src="https://kit.fontawesome.com/487b445571.js" crossorigin="anonymous"></script>
   </footer>
 
 
