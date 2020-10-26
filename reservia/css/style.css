@@ -5,9 +5,6 @@ body, ul{
 	padding: 0;
 	font-family: 'Raleway', sans-serif; 
 }
-body > * {
-	margin : 2em 0.5em;
-}
 header {
  	display: flex;
  	flex-direction: row;
@@ -59,13 +56,23 @@ header {
  	color: black;
  }
    .menu a:hover {
- 	border-top : solid #0065FC;
+ 	border-top : solid 2px #0065FC;
  	color: #0065FC;
  }
    .menuOption3 a {
  	color: #0065FC;	
  	font-weight: bold;
  }
+ 	.menuMobile {
+  	display: none;
+  }
+
+ 	.menuMobile a {
+  	padding-top: 30px;
+ 	text-decoration: none;
+ 	color: black;
+ }
+ 	
 
 /*formulaires*/
 .filtres-bar {
@@ -105,18 +112,30 @@ header {
 i.fas,
   i.fab {
     border: 1px;
-    border-radius: 50%;
+    border-radius: 100%;
   }
- #info {
- 	margin: 2em 0; 
- }
- i.fa-info {
- 	border : solid #f2f2f2 10px;
- 	color: blue;
+
+
+ .filtresInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 2em 0;
+	background-color: #ffffff;
+	border: none;
+}
+
+i.fa-info {
+ 	margin-right: 1em;
+ 	color: #0065FC;
+ 	border: solid 20px #f2f2f2;
  }
 i.fa-chart-line {
  	margin-right: 1em; 
  }
+.blueStar {
+	color: #0065FC;
+}
 
 /*STYLE DU MENU*/
  nav {
@@ -168,7 +187,8 @@ input {
 .mainContent {
 	display : flex;
 	flex-direction : row;
-	width: 98%;
+	width: 100%;
+	margin-bottom: 50px;
 }
 /*HEBERGEMENTS PRINCIPAUX*/
 .mainHebergements {
@@ -213,8 +233,7 @@ input {
 	height: 130px;
 	margin: 0;
 	padding: 0;
-	border-style: solid;
-	border-radius: 20px;
+	border-radius: 20px 20px 0px 0px;
 	border-color: #ffffff;
 }
 .mainHebergements figure img {
@@ -241,18 +260,6 @@ article figure img {
 	overflow: hidden;
 	width: 100%;
 }
-
-/*.main1 img, .main2 img {
-	width: 100%;
-}
-.main5 img {
-	height: 130%;
-}
-*/
-
-
-
-
 
 /*HERBEGEMENTS POPULAIRES*/
 .popularHebergements {
@@ -296,8 +303,9 @@ article figure img {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-	width: 98%;
+	width: 100%;
 	height : 475px;
+	margin-bottom: 50px;
 }
 .activites {
 	display: flex;
@@ -311,9 +319,7 @@ article figure img {
 }
 .activites figure {
 	height: 90%;
-	border-radius: 10px;
-	border-style: solid;
-	border-width: 0.1em;
+	border-radius: 10px 10px 0 0;
 	border-color: #ffffff;	
 }
 .activites h3 {
@@ -367,7 +373,7 @@ article figure img {
 }
 .act3 img {
     position: relative;
-    width: 130%;
+    width: 133%;
     left: -5.5em;
 }
 .act4 img {
@@ -376,16 +382,14 @@ article figure img {
     left: -11em;
 }
 
-    
-
 /*footer*/
 footer {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	background-color : #f2f2f2;
-	padding: 0% 1%;
-	width : 98%;
+	padding: 2%;
+	width : 96%;
 	}
 
 footer div {
@@ -396,4 +400,156 @@ footer div {
 footer p {
 	font-size: 0.8em;
 	line-height: 2em;	
+}
+
+/*MEDIA QUERIES PORTABLE*/
+
+@media screen and (max-width: 769px) {
+ 	
+ 	#position {
+ 		padding: 20px;
+ 	}
+ 	.mainHebergements li {
+ 		width: 44%;
+ 		margin: 0.5em 0.5em;
+ 	}
+ 	.mainHebergements {
+ 		margin-right: 10px;
+ 	}
+ 	footer div {
+ 		margin: 0.5em 2.5em 0;
+ 	}
+
+}
+
+
+/*MEDIA QUERIES PORTABLE*/
+
+@media screen and (max-width: 640px) {
+
+  header, .callToAction, .mainContent, #ancre2, .activites_bloc {
+    padding: 0 0.5em;
+  }	
+  .menu {
+  	justify-content: flex-end;
+  	padding-right: 20px;
+  }
+  .menuOption1, .menuOption2 {
+  	display: none;
+  }
+  .menuMobile {
+  	display: flex;
+  	justify-content: space-around;
+  	align-items: center;
+  	list-style-type: none;
+ 	padding-top: 0.7em;
+ 	font-size: 0.9em;
+  }
+  .menuMobile li {
+ 	width: 100%;
+ 	text-align: center;
+ 	border-bottom: solid 3px #f2f2f2;
+ 	padding-bottom: 1em;
+  }
+  .menuMobile a:hover {
+  	color: #0065FC;
+  }
+  .menuMobile li.menuMobile1:hover , .menuMobile li.menuMobile2:hover {
+  	border-bottom: 3px solid blue;
+  }
+  .filtres-bar {
+  	display: flex;
+  	flex-wrap: wrap;
+  }
+  i.fa-info {
+    margin-right: 0.5em;
+    border: solid 10.5px #f2f2f2;
+  }
+  #info {
+  	text-align: left;
+  }
+  #position {
+  	padding: 20px;
+  }
+  .mainContent {
+  	display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .mainContent > * {
+  	width: 100%;
+  	margin-bottom : 1.5em;
+  }
+   .mainHebergements {
+  	display : flex;
+  	flex-wrap: wrap;
+  	flex-direction: column;
+  	background-color: white;
+  }
+  .mainHebergements ul > * {
+  	width: 100%;
+  	border-style: solid;
+    border-width: 0.1em;
+    border-color: #f2f2f2f2;
+    box-shadow: 0px 7px 5px #f2f2f2;
+  }
+  
+  .popularHebergements {
+  	border-radius: 0;
+  }
+  .activites_bloc {
+  	display : flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+  	width: 100%;
+  	height: auto;
+  	margin-bottom: 5.5em;
+  }
+
+  .activites_bloc div {
+  	width: 100%;
+  }
+
+  .activites {
+  	border: 0;
+  	height: 100%;
+  	border-style: none;
+  }
+  .fullCol {
+  	margin-top: 1.5em;
+  	height : 30vh;
+  }
+  .halfColDiv {
+  	height : 60vh;
+  }
+  .halfColDiv>* {
+  	margin-top: 1.5em;
+  	height : 30vh;
+  }
+  .halfCol {
+  	margin-top: 1.5em;
+  	height : 30vh;
+  }
+  .fullCol2 {
+  	margin-top: 5em;
+  }
+
+  footer {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: stretch;
+  }
+  footer > * {
+  	margin-bottom : 1em;
+  }
+  footer div {
+    width: 100%;
+    margin-left: 1em;
+  }
+  footer h3 {
+    margin-bottom: 1em;
+  }
+
 }
