@@ -448,6 +448,11 @@ footer li {
 	line-height: 2em;	
 }
 
+footer li a {
+	color: black;
+	text-decoration: none;
+}
+
 
 
 @media screen and (max-width: 1000px) { 
